@@ -2,7 +2,13 @@ import { useState } from 'react';
 import { LinkType } from '../../types/types';
 import styles from './Link.module.scss';
 
-const Link = ({ link }: { link: LinkType }) => {
+interface Props {
+  link: LinkType;
+}
+
+const ACTIVE_LINK = 'Contact';
+
+const Link = ({ link }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNested = () => {
@@ -10,9 +16,8 @@ const Link = ({ link }: { link: LinkType }) => {
   };
   const navigate = (e: React.MouseEvent<HTMLElement>, path: string) => {
     e.stopPropagation();
-    console.log('navigated to', path);
+    alert(`navigated to ${path}`);
   };
-  const activeLink = 'Contact';
 
   return (
     <li
@@ -20,7 +25,7 @@ const Link = ({ link }: { link: LinkType }) => {
         link.nested ? toggleNested() : navigate(e, link.name);
       }}
       className={`${styles.link} ${styles.linkItem}
-      ${activeLink === link.name ? styles.active : ''}`}
+      ${ACTIVE_LINK === link.name ? styles.active : ''}`}
     >
       {link.name}
       {link.nested && <span className={`${styles.arrow} ${isOpen ? styles.isOpen : ''}`}></span>}
