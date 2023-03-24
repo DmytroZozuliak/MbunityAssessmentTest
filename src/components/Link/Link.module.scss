@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+
+.linkItem {
+  cursor: pointer;
+  font-family: $fontRoboto;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.link {
+  position: relative;
+  color: $colorTextDark2;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  &.active {
+    font-weight: 600;
+    color: $colorTextDark1;
+  }
+}
+
+.nestedLinks {
+  position: absolute;
+  top: 30px;
+  background: $bgDark;
+  color: $colorTextLight1;
+  width: max-content;
+
+  .nestedLink {
+    padding: 10px;
+  }
+}
+
+.arrow::after {
+  content: '';
+  position: relative;
+  top: -2px;
+  display: block;
+  height: 0.45em;
+  width: 0.45em;
+  border-width: 0.15em 0.15em 0 0;
+  border-style: solid;
+  border-color: $colorTextDark2;
+  transform: rotate(135deg);
+}
+
+.isOpen::after {
+  top: 2px;
+  transform: rotate(-45deg);
+}

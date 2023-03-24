@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Manrope:wght@500&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
+@import './styles/variables.scss';
+
+:root {
+  font-family: $fontPoppins;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $colorTextDark1;
+  background-color: $bgLight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1280px;
+  padding-inline: 20px;
+  width: 100%;
+}
