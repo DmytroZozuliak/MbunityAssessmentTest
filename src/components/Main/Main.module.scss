@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.container {
+  margin: 33.5px auto 50px;
+  max-width: 1280px;
+  padding-inline: 42px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: $fontPoppins;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.subtitle {
+  font-family: $fontPoppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.letterContainer {
+  margin-top: 50px;
+  padding: 10px;
+  background: $bgLight2;
+  max-width: 1196px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
