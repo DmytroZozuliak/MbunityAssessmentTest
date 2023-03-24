@@ -44,6 +44,7 @@
 .nestedLinks {
   position: absolute;
   top: 30px;
+  list-style: none;
   background: $bgDark;
   color: $colorTextLight1;
   width: max-content;
@@ -51,8 +52,10 @@
   @media (max-width: 800px) {
     background: $bgLight;
     color: $colorTextDark1;
-    position: static;
+    top: 0;
+    left: calc(100% + 15px);
     display: flex;
+    flex-direction: column;
   }
 
   .nestedLink {
@@ -77,11 +80,19 @@
   transform: rotate(135deg);
 
   @media (max-width: 800px) {
+    top: 4px;
     border-color: $colorTextLight1;
+    transform: rotate(45deg);
   }
 }
 
 .isOpen::after {
   top: 2px;
   transform: rotate(-45deg);
+
+  @media (max-width: 800px) {
+    top: 4px;
+    left: 5px;
+    transform: rotate(225deg);
+  }
 }
