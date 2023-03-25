@@ -8,20 +8,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 800px) {
+    margin-top: 14px;
+    padding-inline: 20px;
+  }
 }
 
-.title {
-  font-family: $fontPoppins;
+.mainTitle {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
+  text-align: center;
+
+  @media (max-width: 550px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
-.subtitle {
-  font-family: $fontPoppins;
+.mainSubtitle {
+  margin-top: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+  text-align: center;
+
+  @media (max-width: 550px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 360px) {
+    max-width: 210px;
+  }
 }
 
 .letterContainer {
@@ -35,6 +55,12 @@
   gap: 50px;
   box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 5px;
+    gap: 0;
+  }
 }
 
 @import '../../styles/variables.scss';
@@ -53,22 +79,36 @@
   overflow: hidden;
   border-radius: 10px;
   border-bottom-right-radius: 0;
+
+  @media (max-width: 800px) {
+    max-width: none;
+    text-align: center;
+    padding: 15px 40px 25px;
+    gap: 0;
+  }
 }
 
 .title {
-  font-family: $fontPoppins;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .subtitle {
   margin-top: 6px;
-  font-family: $fontPoppins;
-  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: $colorTextLight2;
+
+  @media (max-width: 800px) {
+    font-size: 11px;
+    line-height: 16px;
+  }
 }
 
 .contactSection {
@@ -76,6 +116,13 @@
   flex-direction: column;
   justify-content: spa;
   gap: 50px;
+
+  @media (max-width: 800px) {
+    max-width: none;
+    text-align: center;
+    margin-top: 12px;
+    gap: 15px;
+  }
 }
 
 .iconsSection {
@@ -83,6 +130,11 @@
   display: flex;
   gap: 24px;
   z-index: 2;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+    margin-top: 58px;
+  }
 
   .iconSVG {
     display: flex;
@@ -116,8 +168,14 @@
   right: -89px;
   bottom: -86px;
   border-radius: 50%;
-
   background: #1a1a1a;
+
+  @media (max-width: 800px) {
+    width: 192px;
+    height: 192px;
+    right: -112px;
+    bottom: -90px;
+  }
 }
 
 .smallCircle {
@@ -127,6 +185,12 @@
   right: 70px;
   bottom: 71px;
   border-radius: 50%;
-
   background: rgba(72, 72, 72, 0.5);
+
+  @media (max-width: 800px) {
+    width: 54px;
+    height: 54px;
+    right: 26px;
+    bottom: 52px;
+  }
 }

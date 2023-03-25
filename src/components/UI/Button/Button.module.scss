@@ -8,6 +8,7 @@
   background-color: $bgDark;
   cursor: pointer;
   transition: all 0.3s;
+  border: none;
 
   &::-moz-focus-inner {
     border: 0;
@@ -17,5 +18,6 @@
   &:hover {
     background-color: $bgLight2;
     color: $colorTextDark1;
+    outline: 1px solid $colorTextDark1;
   }
 }

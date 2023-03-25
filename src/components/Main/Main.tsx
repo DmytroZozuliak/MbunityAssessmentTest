@@ -13,8 +13,8 @@ const Main = () => {
   return (
     <main>
       <div className={styles.container}>
-        <h1 className={styles.title}>Contact Us</h1>
-        <p className={styles.subtitle}>Any question or remarks? Just write us a message!</p>
+        <h1 className={styles.mainTitle}>Contact Us</h1>
+        <p className={styles.mainSubtitle}>Any question or remarks? Just write us a message!</p>
 
         <div className={styles.letterContainer}>
           <div className={styles.wrapper}>

@@ -8,7 +8,7 @@ interface ContactItemProps {
 const ContactItem = ({ text, icon }: ContactItemProps) => {
   return (
     <div className={styles.wrapper}>
-      {icon}
+      <div className={styles.iconWrapper}>{icon}</div>
       <p>{text}</p>
     </div>
   );
