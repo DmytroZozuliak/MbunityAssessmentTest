@@ -63,20 +63,20 @@ const Form = () => {
         <InputField
           {...register('name')}
           dirtyField={dirtyFields.name}
-          label="Firs Name"
+          label="First Name"
           errorMessage={errors.name?.message}
-        />
-        <InputField
-          {...register('email')}
-          dirtyField={dirtyFields.email}
-          label="Email"
-          errorMessage={errors.email?.message}
         />
         <InputField
           {...register('surname')}
           dirtyField={dirtyFields.surname}
           label="Last Name"
           errorMessage={errors.surname?.message}
+        />
+        <InputField
+          {...register('email')}
+          dirtyField={dirtyFields.email}
+          label="Email"
+          errorMessage={errors.email?.message}
         />
         <InputField
           {...register('phone')}
