@@ -1,10 +1,32 @@
 @import '../../styles/variables.scss';
 
-.wrapper {
-  // display: flex;
-  // gap: 25px;
-  // color: $colorTextLight1;
-  // font-family: $fontPoppins;
-  // font-size: 16px;
-  // line-height: 24px;
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 40px;
+
+  &::after {
+    content: url('../../assets/letter_send\ 1.png');
+    position: absolute;
+    pointer-events: none;
+    bottom: -48px;
+    right: 93px;
+  }
+}
+
+.inputsText {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 39px;
+}
+
+.submit {
+  padding: 15px 48px;
+  margin-top: 25px;
+  align-self: flex-end;
 }

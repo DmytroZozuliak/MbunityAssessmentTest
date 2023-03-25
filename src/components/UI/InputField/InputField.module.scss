@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+
+.inputWrapper {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  .label {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: $colorTextDark4;
+
+    &.dirty {
+      color: $colorTextDark1;
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorTextDark4;
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid $colorTextDark4;
+    outline: none;
+
+    &:focus {
+      color: $colorTextDark1;
+      border-bottom: 1px solid $colorTextDark1;
+    }
+    &:focus ~ .label {
+      color: $colorTextDark1;
+    }
+  }
+
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    color: red;
+  }
+}

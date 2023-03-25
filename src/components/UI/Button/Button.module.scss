@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $colorTextLight1;
+  background-color: $bgDark;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    background-color: $bgLight2;
+    color: $colorTextDark1;
+  }
+}

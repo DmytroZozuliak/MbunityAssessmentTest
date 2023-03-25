@@ -7,5 +7,6 @@ export const validationSchema = Yup.object({
     .min(3, 'Surname should have at least 3 characters'),
   email: Yup.string().required('Email is required').email('Enter valid email'),
   phone: Yup.string().required('Phone number is required'),
-  subject: Yup.string().required('Subject is required'),
+  subject: Yup.string().required('Choose the subject'),
+  message: Yup.string().required('Message is required'),
 });
