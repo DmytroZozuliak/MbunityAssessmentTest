@@ -15,6 +15,7 @@ const Link = ({ link }: Props) => {
     setIsOpen((prev) => !prev);
   };
   const navigate = (e: React.MouseEvent<HTMLElement>, path: string) => {
+    setIsOpen(false);
     e.stopPropagation();
     alert(`navigated to ${path}`);
   };

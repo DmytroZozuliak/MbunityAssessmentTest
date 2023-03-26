@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ReactComponent as UerIcon } from '../../assets/userLogo.svg';
 import { ReactComponent as CartIcon } from '../../assets/cartLogo.svg';
 import Link from '../Link/Link';
@@ -8,6 +8,16 @@ import { LINKS } from './links';
 const Header = () => {
   const [showBurger, setShowBurger] = useState(false);
   const activeClass = showBurger ? styles.active : '';
+
+  // locking scrolling when burger is open
+  useEffect(() => {
+    const body = document.body;
+    if (showBurger) {
+      body.classList.add('lock');
+    } else {
+      body.classList.remove('lock');
+    }
+  }, [showBurger]);
 
   return (
     <header className={`${styles.header} container`}>
