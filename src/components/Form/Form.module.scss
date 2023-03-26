@@ -9,7 +9,7 @@
 
   @media (max-width: 800px) {
     margin-right: 0;
-    padding-inline: 21px;
+    padding-inline: 16px;
   }
 
   &::after {
@@ -56,6 +56,10 @@
 
 .radioSelect {
   margin-bottom: 25px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 5px;
+  }
 }
 
 .submit {
@@ -70,7 +74,7 @@
     width: 100%;
     margin-top: 5px;
     margin-bottom: 59px;
-    padding: 9.6px auto;
+    padding: 9.6px 91px;
     font-size: 13px;
     line-height: 19px;
   }

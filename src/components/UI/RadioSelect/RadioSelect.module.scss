@@ -5,6 +5,10 @@
   padding-top: 34px;
   padding-bottom: 20px;
 
+  @media (max-width: 800px) {
+    padding-top: 31px;
+  }
+
   .label {
     position: absolute;
     top: 0;

@@ -10,7 +10,10 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>Logo Here</div>
-      <div className={styles.divider} />
+
+      <div className={styles.dividerWrapper}>
+        <div className={styles.divider} />
+      </div>
       <div className={`container ${styles.wrapper}`}>
         <div className={styles.contactSection}>
           <h3 className={styles.subtitle}>Reach us</h3>
