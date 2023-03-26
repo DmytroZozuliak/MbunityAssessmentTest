@@ -6,6 +6,7 @@ import styles from './Header.module.scss';
 import { LINKS } from './links';
 
 const Header = () => {
+  // state for open/closed burger menu
   const [showBurger, setShowBurger] = useState(false);
   const activeClass = showBurger ? styles.active : '';
 

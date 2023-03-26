@@ -24,7 +24,7 @@ const defaultValues: FormValues = {
   message: '',
 };
 
-// Mock subjectOptions
+// Mock subjectOptions for future fast changing
 const subjectOptions = [
   'General Inquiry',
   'General Inquiry',
@@ -33,6 +33,7 @@ const subjectOptions = [
 ] as const;
 
 const Form = () => {
+  // use react-hook-form and yup for validation
   const {
     register,
     handleSubmit,
@@ -45,6 +46,7 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     const { name, surname, email, phone, subject, message } = data;
+    // mock sending data from form to server
     alert(`
     You entered:
     name: ${name}

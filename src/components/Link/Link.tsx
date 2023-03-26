@@ -9,6 +9,7 @@ interface Props {
 const ACTIVE_LINK = 'Contact';
 
 const Link = ({ link }: Props) => {
+  // state for deeper links
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNested = () => {
@@ -17,6 +18,7 @@ const Link = ({ link }: Props) => {
   const navigate = (e: React.MouseEvent<HTMLElement>, path: string) => {
     setIsOpen(false);
     e.stopPropagation();
+    // mock navigation to another page
     alert(`navigated to ${path}`);
   };
 

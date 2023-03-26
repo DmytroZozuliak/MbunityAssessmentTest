@@ -5,6 +5,8 @@ interface ContactItemProps {
   icon: React.ReactNode;
 }
 
+// reusable component from main section and footer
+
 const ContactItem = ({ text, icon }: ContactItemProps) => {
   return (
     <div className={styles.wrapper}>
