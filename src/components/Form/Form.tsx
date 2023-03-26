@@ -87,6 +87,7 @@ const Form = () => {
       </div>
 
       <RadioSelect
+        className={styles.radioSelect}
         label="Select Subject?"
         values={subjectOptions}
         dirtyField={dirtyFields.subject}

@@ -17,7 +17,7 @@
     position: absolute;
     pointer-events: none;
     bottom: -8%;
-    right: 93px;
+    right: 83px;
 
     @media (max-width: 1110px) {
       transform: scale(0.45);
@@ -52,6 +52,10 @@
     margin-bottom: 5px;
     row-gap: 0;
   }
+}
+
+.radioSelect {
+  margin-bottom: 25px;
 }
 
 .submit {

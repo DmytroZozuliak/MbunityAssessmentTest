@@ -35,12 +35,12 @@ const Footer = () => {
             <li>Privacy Policy</li>
             <li>Terms & Services</li>
             <li>Terms of Use</li>
-            <li>Refund</li>
+            <li>Refund Policy</li>
           </ul>
         </div>
 
         <div className={styles.linksColumn}>
-          <h3 className={styles.subtitle}>Links</h3>
+          <h3 className={styles.subtitle}>Quick Links</h3>
           <ul className={styles.links}>
             <li>Techlabz Keybox</li>
             <li>Downloads</li>
@@ -51,10 +51,10 @@ const Footer = () => {
         <div className={styles.subscribeSection}>
           <h3 className={styles.subtitle}>Join Our Newsletter</h3>
           <div className={styles.subscribeAction}>
-            <input className={styles.input} placeholder="Your address" />
+            <input type="email" className={styles.input} placeholder="Your    address" />
             <Button className={styles.button}>Subscribe</Button>
           </div>
-          <span>* Will send you weekly updates for your better tool management.</span>
+          <span>*&nbsp;&nbsp;Will send you weekly updates for your better tool management.</span>
         </div>
       </div>
     </footer>

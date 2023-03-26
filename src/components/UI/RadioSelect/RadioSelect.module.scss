@@ -13,6 +13,7 @@
     font-size: 14px;
     line-height: 20px;
     color: $colorTextDark4;
+    font-family: inherit;
 
     &.dirty {
       color: $colorTextDark1;
