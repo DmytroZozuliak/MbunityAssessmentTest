@@ -1,13 +1,12 @@
+import { useState } from 'react';
+import { ReactComponent as UerIcon } from '../../assets/userLogo.svg';
+import { ReactComponent as CartIcon } from '../../assets/cartLogo.svg';
 import Link from '../Link/Link';
 import styles from './Header.module.scss';
 import { LINKS } from './links';
-import { ReactComponent as UerIcon } from '../../assets/userLogo.svg';
-import { ReactComponent as CartIcon } from '../../assets/cartLogo.svg';
-import { useState } from 'react';
 
 const Header = () => {
   const [showBurger, setShowBurger] = useState(false);
-
   const activeClass = showBurger ? styles.active : '';
 
   return (

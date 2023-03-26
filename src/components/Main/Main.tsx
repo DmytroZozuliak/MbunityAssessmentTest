@@ -4,10 +4,10 @@ import { ReactComponent as DiscordLogo } from '../../assets/discordLogo.svg';
 import { ReactComponent as PhoneLogo } from '../../assets/bxs_phone-call.svg';
 import { ReactComponent as LocationLogo } from '../../assets/carbon_location-filled.svg';
 import { ReactComponent as EmailLogo } from '../../assets/ic_sharp-email.svg';
-import styles from './Main.module.scss';
 import ContactItem from '../ContactItem';
 import { contacts } from '../../constants';
 import Form from '../Form';
+import styles from './Main.module.scss';
 
 const Main = () => {
   return (

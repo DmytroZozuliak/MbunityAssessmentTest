@@ -2,8 +2,8 @@ import { ReactComponent as PhoneLogo } from '../../assets/bxs_phone-call.svg';
 import { ReactComponent as LocationLogo } from '../../assets/carbon_location-filled.svg';
 import { ReactComponent as EmailLogo } from '../../assets/ic_sharp-email.svg';
 import { contacts } from '../../constants';
-import ContactItem from '../ContactItem';
 import Button from '../UI/Button';
+import ContactItem from '../ContactItem';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -50,12 +50,10 @@ const Footer = () => {
 
         <div className={styles.subscribeSection}>
           <h3 className={styles.subtitle}>Join Our Newsletter</h3>
-
           <div className={styles.subscribeAction}>
             <input className={styles.input} placeholder="Your address" />
             <Button className={styles.button}>Subscribe</Button>
           </div>
-
           <span>* Will send you weekly updates for your better tool management.</span>
         </div>
       </div>

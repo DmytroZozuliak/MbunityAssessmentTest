@@ -5,7 +5,7 @@ import styles from './Link.module.scss';
 interface Props {
   link: LinkType;
 }
-
+// mock active link according figma
 const ACTIVE_LINK = 'Contact';
 
 const Link = ({ link }: Props) => {

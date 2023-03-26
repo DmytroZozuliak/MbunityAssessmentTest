@@ -1,10 +1,10 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import styles from './Form.module.scss';
 import { validationSchema } from '../../utils/validationSchema';
 import InputField from '../UI/InputField';
 import RadioSelect from '../UI/RadioSelect';
 import Button from '../UI/Button';
+import styles from './Form.module.scss';
 
 export interface FormValues {
   name: string;
