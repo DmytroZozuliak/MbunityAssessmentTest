@@ -194,6 +194,34 @@
   display: flex;
 }
 
+.inputField {
+  position: relative;
+
+  .tooltip {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    display: inline-block;
+    font-family: $fontPoppins;
+    font-size: 9px;
+    padding: 3px;
+    background-color: $bgLight;
+    color: red;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-right: 5px solid transparent;
+      border-top: 10px solid $bgLight;
+      border-left: 5px solid transparent;
+    }
+  }
+}
+
 .input {
   display: inline-block;
   width: 100%;

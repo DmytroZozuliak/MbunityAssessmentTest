@@ -77,6 +77,7 @@ const Form = () => {
         <InputField
           {...register('email')}
           dirtyField={dirtyFields.email}
+          type="email"
           label="Email"
           errorMessage={errors.email?.message}
         />
