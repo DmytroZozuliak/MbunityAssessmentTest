@@ -1,31 +1,12 @@
-import { useState } from 'react';
 import { ReactComponent as PhoneLogo } from '../../assets/bxs_phone-call.svg';
 import { ReactComponent as LocationLogo } from '../../assets/carbon_location-filled.svg';
 import { ReactComponent as EmailLogo } from '../../assets/ic_sharp-email.svg';
 import { contacts } from '../../constants';
-import Button from '../UI/Button';
 import ContactItem from '../ContactItem';
 import styles from './Footer.module.scss';
+import SubscribeAction from '../SubscribeAction';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [tooltip, setTooltip] = useState(false);
-
-  const subscribe = () => {
-    // sending email
-    const emailRegexp =
-      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!email.match(emailRegexp)) {
-      setTooltip(true);
-      setTimeout(() => {
-        setTooltip(false);
-      }, 2_000);
-    } else {
-      alert(`ypu subscribed on ${email}`);
-      setEmail('');
-    }
-  };
-
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>Logo Here</div>
@@ -72,21 +53,7 @@ const Footer = () => {
 
         <div className={styles.subscribeSection}>
           <h3 className={styles.subtitle}>Join Our Newsletter</h3>
-          <div className={styles.subscribeAction}>
-            <div className={styles.inputField}>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={styles.input}
-                placeholder="Your    address"
-              />
-              {tooltip && <span className={styles.tooltip}>Email is incorrect</span>}
-            </div>
-            <Button onClick={subscribe} className={styles.button}>
-              Subscribe
-            </Button>
-          </div>
+          <SubscribeAction />
           <span>*&nbsp;&nbsp;Will send you weekly updates for your better tool management.</span>
         </div>
       </div>
